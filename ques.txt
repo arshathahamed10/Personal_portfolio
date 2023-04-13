@@ -1,3 +1,4 @@
 1.What is fr - Grid also introduces an additional length unit to help us create flexible grid tracks. The new fr unit represents a fraction of the available space in the grid container
 2.rem - To recap, the rem unit means "The root element's font-size" (rem stands for "root em"). The <li> elements inside the <ul> with a class of rems take their sizing from the root element ( <html> ).
 2.1.  1 rem = 18px;
+3.&#169; = copyright Symbol
