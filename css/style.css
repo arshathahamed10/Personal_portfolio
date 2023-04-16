@@ -7,7 +7,7 @@
     --header-height: 3rem;
     /* Colors */
     /* Change favorite color */
-    --hue-color: 230;/*  Blue color */ 
+    --hue-color: 220;/*  Blue color */ 
     /* HSL Color mode */
     --first-color:hsl(var(--hue-color),69%,61%);
     --first-color-second:hsl(var(--hue-color),69%,61%);
@@ -1057,6 +1057,10 @@ img
     {
         justify-content: initial;
     }
+    .second__info
+    {
+        margin-left: 4rem;
+    }
     .about__buttons
     {
         justify-content: initial;
@@ -1117,7 +1121,7 @@ img
     }
     .footer__copy
     {
-        margin-top: 4.5rem;
+        margin-top: 3.5rem;
     }
 }
 /* For Larger Devices */
