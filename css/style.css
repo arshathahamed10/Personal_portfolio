@@ -906,6 +906,10 @@ img
     {
         grid-template-columns: .25fr 3fr;
     }
+    .home__img,.home__data
+    {
+        margin-left: 1.2rem;
+    }
     .home__blob
     {
         width: 180px;
