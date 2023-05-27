@@ -887,7 +887,7 @@ img
 }
 /* MEDIA QUERIES */
 /* For small Device */
-@media screen and (max-width:380px)
+@media screen and (max-width:500px)
 {
     .container
     {
@@ -939,6 +939,11 @@ img
     {
         padding: 0 .5rem;
     }
+    .portfolio__img
+    {
+        height:150px;
+    }
+    
 }
 /* For Medium Queries */
 @media screen and (min-width : 568px) 
