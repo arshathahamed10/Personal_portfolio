@@ -29,6 +29,7 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
 // ACCORDIAN SKILLS
 const skillsContent = document.getElementsByClassName("skills__content"),
       skillsHeader = document.querySelectorAll('.skills__header')
@@ -145,3 +146,29 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+// EMAIL JS
+const contactForm = document.getElementById('contact-form'),
+      contactMessage = document.getElementById('contact-message')
+      
+const sendEmail = (e) =>{
+    e.preventDefault()
+    // serviceID = templateID - #form - publickey
+    emailjs.sendForm('service_m4eadhw','template_h9rjcah','#contact-form','sNmHWz0kH_JgRJjs2')
+        .then(() => {
+            // Sow sent Message
+            contactMessage.textContent = 'Message sent successfully :)'
+            // Remove message after 5 seconds
+            setTimeout(() => {
+                contactMessage.textContent = ''
+            },5000)
+            // Clear input fields
+            contactForm.reset()
+        },()=>{
+            // Show Error Message
+            contactMessage.textContent = 'Message not sent :('
+        })
+        
+}
+contactForm.addEventListener('submit',sendEmail)

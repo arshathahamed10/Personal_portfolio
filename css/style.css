@@ -393,6 +393,12 @@ img
     background-color: transparent;
     color:var(--first-color-alt);
 }
+.contact__button
+{
+    justify-content: center;
+    width:60%;
+    margin:auto;
+}
 /* ABOUT */
 .about__img
 {
