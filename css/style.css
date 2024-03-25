@@ -6,7 +6,6 @@
 {
     --header-height: 3rem;
     /* Colors */
-    /* Change favorite color */
     --hue-color: 220;/*  Blue color */ 
     /* HSL Color mode */
     --first-color:hsl(var(--hue-color),69%,61%);
@@ -22,7 +21,7 @@
     --scroll-bar-color:hsl(var(--hue-color),12%,90%);
     --scroll-thumb-color:hsl(var(--hue-color),12%,80%);
 
-    /* Font and Typography */
+    /* Font */
     --body-font: 'Poppins', sans-serif;
 
     /* .5 rem = 8px ,1rem = 16px, 1.5rem =24px ,2rem=32px ...*/
@@ -48,6 +47,7 @@
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
+    --mb-4:4rem;
 
     /* Z index */
     --z-tooltip: 10;
@@ -225,12 +225,14 @@ img
     grid-template-columns: repeat(3,1fr);
     gap:2rem;
 }
+.nav__logo,.nav__link{
+    font-size: var(--normal-font-size);
+}
 .nav__link
 {
     display: flex;
     flex-direction:column;
     align-items:center;
-    font-size: var(--small-font-size);
     color: var(--title-color);
     font-weight:var(--font-medium);
 } 
@@ -281,21 +283,6 @@ img
     grid-template-columns: .5fr 3fr;
     padding-top:3.5rem;
     align-items:center;
-}
-.home__social
-{
-    display:grid;
-    grid-template-columns: max-content ;
-    row-gap:1rem;
-}
-.home__social-icon
-{
-    font-size:1.25rem;
-    color:var(--first-color);
-}
-.home__social-icon:hover
-{
-    color:var(--first-color-alt);
 }
 .home__blob
 {
@@ -442,6 +429,23 @@ button
 {
     display:flex;
     justify-content:center;
+    
+}
+.about__social-icons {
+    display: flex;
+    margin-top: 10px; 
+}
+.about__social-icon
+{
+    font-size:1.5rem;
+    margin-top: 3%;
+    margin-right: 50px;
+    color:var(--first-color);
+}
+.about__social-icon:hover
+{
+    
+    color:var(--first-color-alt);
 }
 /* SKILLS */
 .skills__container
@@ -707,6 +711,7 @@ button
     visibility:visible;
 }
 /* PORTFOLIO */
+
 .portfolio__container
 {
     overflow:initial;
@@ -767,6 +772,7 @@ button
 .contact__container
 {
     row-gap: 3rem;
+    margin-bottom: var(--mb-4);
 }
 .contact__information
 {
@@ -909,6 +915,7 @@ button
 }
 /* MEDIA QUERIES */
 /* For small Device */
+
 @media screen and (max-width:500px)
 {
     .container
@@ -935,6 +942,21 @@ button
     .home__blob
     {
         width: 180px;
+    }
+    .about__social-icons{
+        margin: auto auto 20px 50px;
+    }
+    .about__buttons{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .about__buttons .button{
+        height: 80%;
+        font-size: 90%;
+        margin:auto auto;
     }
     .skills__title
     {
@@ -966,6 +988,15 @@ button
         height:150px;
     }
     
+}
+@media screen and (max-width:320px){
+    .qualification__data{
+        font-size: 90%;
+        width: 110%;
+    }
+    .qualification__data .san{
+        width: 90%;
+    }
 }
 /* For Medium Queries */
 @media screen and (min-width : 568px) 
