@@ -990,7 +990,11 @@ button
     {
         height:150px;
     }
-    
+    .about__social-icons{
+       text-align :center;
+       /* margin-left: 69px; */
+       margin-right: 10px;
+    }
 }
 @media screen and (max-width:320px){
     .qualification__data{
@@ -1000,6 +1004,9 @@ button
     .qualification__data .san{
         width: 90%;
     }
+    .about__social-icons{
+        text-align :center;
+     }
 }
 /* For Medium Queries */
 @media screen and (min-width : 568px) 
