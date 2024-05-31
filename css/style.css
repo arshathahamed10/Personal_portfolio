@@ -111,7 +111,6 @@ html
 }
 body
 {
-    margin: 0 0 var(--header-height) 0;
     font-family:var(--body-font);
     font-size: var(--normal-font-size);
     background-color:var(--body-color);
@@ -134,9 +133,9 @@ img
     max-width:100%;
     height:auto;
 }
-section{
+/* section{
     min-height: 100vh;
-}
+} */
 /* Reusable CSS Classes */
 .section
 {
