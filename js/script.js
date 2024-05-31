@@ -1,7 +1,8 @@
 // Menu show Y Hidden
 const navMenu = document.getElementById('nav-menu'),
       navToggle=document.getElementById('nav-toggle'),
-      navClose=document.getElementById('nav-close')
+      navClose=document.getElementById('nav-close'),
+      hiddenElement = document.querySelectorAll('.hidden');
 // MENU SHOW
 // validate if constant exists
 if(navToggle)
@@ -171,3 +172,17 @@ const sendEmail = (e) =>{
         
 }
 contactForm.addEventListener('submit',sendEmail)
+
+// TRANSITION
+const observer = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) => {
+        console.log(entry);
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+        else{
+            entry.target.classList.remove('show');
+        }
+    });
+});
+hiddenElement.forEach((el) => observer.observe(el));
