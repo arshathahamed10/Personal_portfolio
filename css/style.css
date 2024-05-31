@@ -1006,6 +1006,16 @@ button
     .about__social-icons{
         text-align :center;
      }
+    .qualification__title{
+        font-size: 80%;
+        width: 70%;
+    }
+    .qualification__subtitle{
+        font-size: 80%;
+    }
+    .qualification__calender{
+        font-size: 80%;
+    }
 }
 /* For Medium Queries */
 @media screen and (min-width : 568px) 
@@ -1249,7 +1259,7 @@ button
 /* Transition Effect */
 .hidden{
     opacity : 0;
-    transition: all 2s;
+    transition: all 1s;
     filter: blur(5px);
     transform: translateX(-100%);
 }
